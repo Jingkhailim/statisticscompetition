@@ -1,0 +1,23 @@
+from matplotlib import pyplot as plt
+import pandas as pd
+import numpy as np
+import matplotlib.dates as mdates
+
+
+#Figure F
+
+x = ['Positive','Neutral','Negative']
+y = [11,33,18]
+ypos = np.arange(3)
+
+
+plt.bar(x,y,width= 0.7,color = 'b')
+plt.xticks(size = 9)
+plt.title(' ')
+plt.suptitle("How do you classify my attitudes towards rap/hip-hop music?")
+#plt.ylabel("Hi")
+plt.figure(figsize=(20,8))
+
+
+plt.show()
+
