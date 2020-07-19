@@ -1,0 +1,52 @@
+from matplotlib import pyplot as plt
+import pandas as pd
+import numpy as np
+import matplotlib.dates as mdates
+
+#Figure E
+x = np.arange(2)
+y = [2,6]
+plt.xticks(x,('Normal American Youth','At Risk American Youth'))
+plt.bar(x,y,color = 'b')
+plt.suptitle('In 2005, a survey conducted to 8 to 18-year-olds of assess media use in the United States')
+
+plt.ylabel('Number of hours of listening to music')
+plt.title('85% of them listen to music' )
+plt.figure(figsize=(6,3))
+
+
+plt.show()
+
+#Figure F
+
+x = ['Positive','Neutral','Negative']
+y = [11,33,18]
+ypos = np.arange(3)
+
+
+plt.bar(x,y,width= 0.7,color = 'b')
+plt.xticks(size = 9)
+plt.title(' ')
+plt.suptitle("How do you classify my attitudes towards rap/hip-hop music?")
+#plt.ylabel("Hi")
+plt.figure(figsize=(20,8))
+
+
+plt.show()
+
+
+#Figure G
+x = ['Very Frequently','Frequently','Sometimes','Rarely','Never']
+y = [3,14,23,19,3]
+ypos = np.arange(5)
+
+
+plt.bar(x,y,width= 0.7,color = 'b')
+plt.xticks(size = 9)
+plt.title("How often do you listen to rap/hip-hop music?")
+plt.suptitle("")
+#plt.ylabel("Hi")
+plt.figure(figsize=(20,8))
+
+
+plt.show()
