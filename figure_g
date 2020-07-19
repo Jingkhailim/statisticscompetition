@@ -1,0 +1,22 @@
+from matplotlib import pyplot as plt
+import pandas as pd
+import numpy as np
+import matplotlib.dates as mdates
+
+
+
+#Figure G
+x = ['Very Frequently','Frequently','Sometimes','Rarely','Never']
+y = [3,14,23,19,3]
+ypos = np.arange(5)
+
+
+plt.bar(x,y,width= 0.7,color = 'b')
+plt.xticks(size = 9)
+plt.title("How often do you listen to rap/hip-hop music?")
+plt.suptitle("")
+#plt.ylabel("Hi")
+plt.figure(figsize=(20,8))
+
+
+plt.show()
