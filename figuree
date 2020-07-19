@@ -1,0 +1,15 @@
+  from matplotlib import pyplot as plt
+import pandas as pd
+import numpy as np
+import matplotlib.dates as mdates
+
+#Figure E
+x = np.arange(2)
+y = [2,6]
+plt.xticks(x,('Normal American Youth','At Risk American Youth'))
+plt.bar(x,y,color = 'b')
+plt.suptitle('In 2005, a survey conducted to 8 to 18-year-olds of assess media use in the United States')
+
+plt.ylabel('Number of hours of listening to music')
+plt.title('85% of them listen to music' )
+plt.figure(figsize=(6,3))
